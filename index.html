@@ -1,0 +1,105 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;FreelanceFX - Facturez en 30s Multi-Devises&lt;/title&gt;
+    &lt;style&gt;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 100px 20px; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px; }
+        .hero p { font-size: 1.3rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta { background: white; color: #667eea; padding: 18px 40px; font-size: 1.2rem; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; display: inline-block; }
+        .cta:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .features { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; color: #333; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .feature { text-align: center; }
+        .feature img { width: 80px; height: 80px; margin-bottom: 20px; filter: grayscale(1); transition: filter 0.3s; }
+        .feature:hover img { filter: grayscale(0); }
+        .feature h3 { font-size: 1.8rem; margin-bottom: 15px; }
+        .pricing { background: #f8f9fa; padding: 80px 20px; }
+        .pricing h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto; }
+        .tier { background: white; padding: 40px 20px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+        .tier:hover { transform: translateY(-10px); }
+        .tier h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .price { font-size: 3rem; font-weight: bold; color: #667eea; margin-bottom: 20px; }
+        .testimonials { padding: 80px 20px; background: white; }
+        .testimonials h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .quote { background: #f8f9fa; padding: 30px; border-radius: 15px; font-style: italic; }
+        footer { background: #333; color: white; text-align: center; padding: 40px 20px; }
+        @media (max-width: 768px) { .hero { padding: 60px 20px; } }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;section class=&quot;hero&quot;&gt;
+        &lt;h1&gt;Facturez en 30s&lt;br&gt;Multi-Devises + Taxes EU Auto&lt;/h1&gt;
+        &lt;p&gt;Dites adieu aux spreadsheets et erreurs VAT. FreelanceFX génère factures pro, split payments, calcule taxes — tout en 1 clic.&lt;/p&gt;
+        &lt;a href=&quot;#pricing&quot; class=&quot;cta&quot;&gt;Commencer Gratuit&lt;/a&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;features&quot;&gt;
+        &lt;h2&gt;Pourquoi FreelanceFX ?&lt;/h2&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+            &lt;div class=&quot;feature&quot;&gt;
+                &lt;img src=&quot;https://via.placeholder.com/80?text=💱&quot; alt=&quot;Devises&quot;&gt;
+                &lt;h3&gt;100+ Devises&lt;/h3&gt;
+                &lt;p&gt;Convertit auto EUR/USD/GBP + split Stripe/Wise.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature&quot;&gt;
+                &lt;img src=&quot;https://via.placeholder.com/80?text=📊&quot; alt=&quot;Taxes&quot;&gt;
+                &lt;h3&gt;VAT/TVA Auto&lt;/h3&gt;
+                &lt;p&gt;Calc EU-compliant, rapports annuels prêts.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature&quot;&gt;
+                &lt;img src=&quot;https://via.placeholder.com/80?text=⚡&quot; alt=&quot;Rapide&quot;&gt;
+                &lt;h3&gt;30s par Facture&lt;/h3&gt;
+                &lt;p&gt;Template réutilisables, signatures e-mail intégrées.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;pricing&quot; id=&quot;pricing&quot;&gt;
+        &lt;h2&gt;Tarifs Simples&lt;/h2&gt;
+        &lt;div class=&quot;tiers&quot;&gt;
+            &lt;div class=&quot;tier&quot;&gt;
+                &lt;h3&gt;Starter&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;Gratuit&lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;5 factures/mois&lt;/li&gt;
+                    &lt;li&gt;Devises basiques&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tier&quot;&gt;
+                &lt;h3&gt;Pro&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;€9/m&lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Illimité&lt;/li&gt;
+                    &lt;li&gt;VAT auto + reports&lt;/li&gt;
+                    &lt;li&gt;Templates custom&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tier&quot;&gt;
+                &lt;h3&gt;Agency&lt;/h3&gt;
+                &lt;div class=&quot;price&quot;&gt;€29/m&lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;+ Team collab&lt;/li&gt;
+                    &lt;li&gt;API + Zapier&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;testimonials&quot;&gt;
+        &lt;h2&gt;Freelancers adorent&lt;/h2&gt;
+        &lt;div class=&quot;quotes&quot;&gt;
+            &lt;div class=&quot;quote&quot;&gt;&quot;Sauvé 10h/mois sur factures. Parfait EU !&quot; — Marie, Dev FR&lt;/div&gt;
+            &lt;div class=&quot;quote&quot;&gt;&quot;Multi-devises magique, clients ravis.&quot; — Alex, Designer UK&lt;/div&gt;
+            &lt;div class=&quot;quote&quot;&gt;&quot;MVP payant jour 1. Merci !&quot; — Tom, Consultant BE&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2026 FreelanceFX. Fait avec ❤️ par Nova.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
